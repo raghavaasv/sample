@@ -14,43 +14,79 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" placeholder="Acronym" translatesAutoresizingMaskIntoConstraints="NO" id="8Fk-WG-6Et">
-                                <rect key="frame" x="0.0" y="50" width="600" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acronyms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE7-g8-TKd">
+                                <rect key="frame" x="0.0" y="37" width="375" height="21"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Enter Text" translatesAutoresizingMaskIntoConstraints="NO" id="pdV-UI-EHJ">
+                                <rect key="frame" x="0.0" y="65" width="375" height="44"/>
+                                <animations/>
+                                <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="50" width="375" height="44"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="50" width="800" height="44"/>
-                                </variation>
                                 <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MD8-4Z-7qO"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="T0c-2P-fSh"/>
                                 </connections>
                             </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="txo-yc-ia2">
+                                <rect key="frame" x="0.0" y="116" width="375" height="543"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="6DQ-Cf-YfX" detailTextLabel="dEY-FC-i9K" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="Ll3-Zs-RtS">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ll3-Zs-RtS" id="jJp-W1-hT1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6DQ-Cf-YfX">
+                                                    <rect key="frame" x="15" y="24" width="31.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dEY-FC-i9K">
+                                                    <rect key="frame" x="15" y="43.5" width="40.5" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="oir-Rn-C9D"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Hak-eh-1hk"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="searchDisplayController" destination="NT3-Md-SxF" id="LO4-he-VG9"/>
+                        <outlet property="searchBar" destination="pdV-UI-EHJ" id="rB6-nb-lB7"/>
+                        <outlet property="tableView" destination="txo-yc-ia2" id="pYg-m8-ePd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="NT3-Md-SxF">
-                    <connections>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="fVl-w5-5ne"/>
-                        <outlet property="searchBar" destination="8Fk-WG-6Et" id="azz-Iv-Vcz"/>
-                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="4nD-ze-PJj"/>
-                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="c2m-y3-AFm"/>
-                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="5VS-76-VQi"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="264.75" y="318"/>
+            <point key="canvasLocation" x="263.5" y="317.5"/>
         </scene>
     </scenes>
 </document>

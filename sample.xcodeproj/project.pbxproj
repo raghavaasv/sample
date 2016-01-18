@@ -15,6 +15,14 @@
 		44F247A41C47F4AC001D9B81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F247A21C47F4AC001D9B81 /* LaunchScreen.storyboard */; };
 		44F247AF1C47F4AC001D9B81 /* sampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F247AE1C47F4AC001D9B81 /* sampleTests.m */; };
 		44F247BA1C47F4AC001D9B81 /* sampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F247B91C47F4AC001D9B81 /* sampleUITests.m */; };
+		44FB4AC91C48151800D1EA74 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FB4AC81C48151800D1EA74 /* CoreGraphics.framework */; };
+		44FB4ACB1C48152300D1EA74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FB4ACA1C48152300D1EA74 /* Foundation.framework */; };
+		44FB4ACD1C48152C00D1EA74 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FB4ACC1C48152C00D1EA74 /* MobileCoreServices.framework */; };
+		44FB4ACF1C48153400D1EA74 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FB4ACE1C48153400D1EA74 /* Security.framework */; };
+		44FB4AD11C48154000D1EA74 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FB4AD01C48154000D1EA74 /* SystemConfiguration.framework */; };
+		44FB4AD51C48595B00D1EA74 /* AFNetworkConfigClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FB4AD41C48595B00D1EA74 /* AFNetworkConfigClient.m */; };
+		44FB4B1D1C487CE600D1EA74 /* AcronymDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FB4B1C1C487CE600D1EA74 /* AcronymDataModel.m */; };
+		44FB4B211C49AB2700D1EA74 /* AFNetworking+MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FB4B1F1C49AB2700D1EA74 /* AFNetworking+MBProgressHUD.m */; };
 		B69A7F7BB01A5B8B31114C63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5917F54CB1C0A1D5FFA28BB7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +60,17 @@
 		44F247B51C47F4AC001D9B81 /* sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F247B91C47F4AC001D9B81 /* sampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sampleUITests.m; sourceTree = "<group>"; };
 		44F247BB1C47F4AC001D9B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44FB4AC81C48151800D1EA74 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		44FB4ACA1C48152300D1EA74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44FB4ACC1C48152C00D1EA74 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		44FB4ACE1C48153400D1EA74 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		44FB4AD01C48154000D1EA74 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		44FB4AD31C48595B00D1EA74 /* AFNetworkConfigClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkConfigClient.h; sourceTree = "<group>"; };
+		44FB4AD41C48595B00D1EA74 /* AFNetworkConfigClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkConfigClient.m; sourceTree = "<group>"; };
+		44FB4B1C1C487CE600D1EA74 /* AcronymDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcronymDataModel.m; sourceTree = "<group>"; };
+		44FB4B1E1C487D1C00D1EA74 /* AcronymDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcronymDataModel.h; sourceTree = "<group>"; };
+		44FB4B1F1C49AB2700D1EA74 /* AFNetworking+MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking+MBProgressHUD.m"; sourceTree = "<group>"; };
+		44FB4B201C49AB2700D1EA74 /* AFNetworking+MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFNetworking+MBProgressHUD.h"; sourceTree = "<group>"; };
 		5917F54CB1C0A1D5FFA28BB7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		639F2E97C586CAF543B5DD9A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B37A87EEF25A273477939A71 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +81,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FB4AD11C48154000D1EA74 /* SystemConfiguration.framework in Frameworks */,
+				44FB4ACF1C48153400D1EA74 /* Security.framework in Frameworks */,
+				44FB4ACD1C48152C00D1EA74 /* MobileCoreServices.framework in Frameworks */,
+				44FB4ACB1C48152300D1EA74 /* Foundation.framework in Frameworks */,
+				44FB4AC91C48151800D1EA74 /* CoreGraphics.framework in Frameworks */,
 				B69A7F7BB01A5B8B31114C63 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +132,7 @@
 		44F247931C47F4AC001D9B81 /* sample */ = {
 			isa = PBXGroup;
 			children = (
+				44FB4AD21C48589F00D1EA74 /* classes */,
 				44F247971C47F4AC001D9B81 /* AppDelegate.h */,
 				44F247981C47F4AC001D9B81 /* AppDelegate.m */,
 				44F2479A1C47F4AC001D9B81 /* ViewController.h */,
@@ -147,6 +172,19 @@
 			path = sampleUITests;
 			sourceTree = "<group>";
 		};
+		44FB4AD21C48589F00D1EA74 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				44FB4B1F1C49AB2700D1EA74 /* AFNetworking+MBProgressHUD.m */,
+				44FB4B201C49AB2700D1EA74 /* AFNetworking+MBProgressHUD.h */,
+				44FB4AD31C48595B00D1EA74 /* AFNetworkConfigClient.h */,
+				44FB4AD41C48595B00D1EA74 /* AFNetworkConfigClient.m */,
+				44FB4B1C1C487CE600D1EA74 /* AcronymDataModel.m */,
+				44FB4B1E1C487D1C00D1EA74 /* AcronymDataModel.h */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
 		91F989DFB68AC4FC8E759EFD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +197,11 @@
 		BF08B4690C0C51E1D7A8E912 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44FB4AD01C48154000D1EA74 /* SystemConfiguration.framework */,
+				44FB4ACE1C48153400D1EA74 /* Security.framework */,
+				44FB4ACC1C48152C00D1EA74 /* MobileCoreServices.framework */,
+				44FB4ACA1C48152300D1EA74 /* Foundation.framework */,
+				44FB4AC81C48151800D1EA74 /* CoreGraphics.framework */,
 				5917F54CB1C0A1D5FFA28BB7 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -347,7 +390,10 @@
 			files = (
 				44F2479C1C47F4AC001D9B81 /* ViewController.m in Sources */,
 				44F247991C47F4AC001D9B81 /* AppDelegate.m in Sources */,
+				44FB4B1D1C487CE600D1EA74 /* AcronymDataModel.m in Sources */,
 				44F247961C47F4AC001D9B81 /* main.m in Sources */,
+				44FB4B211C49AB2700D1EA74 /* AFNetworking+MBProgressHUD.m in Sources */,
+				44FB4AD51C48595B00D1EA74 /* AFNetworkConfigClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +539,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -505,6 +552,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
