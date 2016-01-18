@@ -47,6 +47,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		442638D01C4CC45F000F11D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442638CA1C4CC45F000F11D6 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8FA00A4BB431E56EB5EC81F0E51AE849;
+			remoteInfo = AFNetworking;
+		};
+		442638D21C4CC45F000F11D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442638CA1C4CC45F000F11D6 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2153A42FDAF3B882B847279CD36D2170;
+			remoteInfo = MBProgressHUD;
+		};
+		442638D41C4CC45F000F11D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442638CA1C4CC45F000F11D6 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 551CBFD598337CE6522AEC23E3E255FC;
+			remoteInfo = Pods;
+		};
 		44F247AB1C47F4AC001D9B81 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 44F247891C47F4AC001D9B81 /* Project object */;
@@ -64,6 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		442638CA1C4CC45F000F11D6 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = ../Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		44F247911C47F4AC001D9B81 /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F247951C47F4AC001D9B81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44F247971C47F4AC001D9B81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -168,9 +190,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		442638CB1C4CC45F000F11D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				442638D11C4CC45F000F11D6 /* libAFNetworking.a */,
+				442638D31C4CC45F000F11D6 /* libMBProgressHUD.a */,
+				442638D51C4CC45F000F11D6 /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		44F247881C47F4AC001D9B81 = {
 			isa = PBXGroup;
 			children = (
+				442638CA1C4CC45F000F11D6 /* Pods.xcodeproj */,
 				44F247931C47F4AC001D9B81 /* sample */,
 				44F247AD1C47F4AC001D9B81 /* sampleTests */,
 				44F247B81C47F4AC001D9B81 /* sampleUITests */,
@@ -477,6 +510,12 @@
 			mainGroup = 44F247881C47F4AC001D9B81;
 			productRefGroup = 44F247921C47F4AC001D9B81 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 442638CB1C4CC45F000F11D6 /* Products */;
+					ProjectRef = 442638CA1C4CC45F000F11D6 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				44F247901C47F4AC001D9B81 /* sample */,
@@ -485,6 +524,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		442638D11C4CC45F000F11D6 /* libAFNetworking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAFNetworking.a;
+			remoteRef = 442638D01C4CC45F000F11D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		442638D31C4CC45F000F11D6 /* libMBProgressHUD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMBProgressHUD.a;
+			remoteRef = 442638D21C4CC45F000F11D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		442638D51C4CC45F000F11D6 /* libPods.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPods.a;
+			remoteRef = 442638D41C4CC45F000F11D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		44F2478F1C47F4AC001D9B81 /* Resources */ = {
